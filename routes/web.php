@@ -12,9 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('test', function () {
-    return view('test');
+  $welcome = 'Prepare for PARTY!';
+  return view('welcome', compact('welcome'));
 });
