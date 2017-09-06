@@ -12,6 +12,6 @@
 */
 
 Route::get('/', function () {
-  $welcome = 'Prepare for PARTY!';
-  return view('welcome', compact('welcome'));
+  $tasks = DB::table('tasks')->get();
+  return view('welcome', compact('tasks'));
 });

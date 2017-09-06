@@ -1,1 +1,3 @@
-<h1>{{$welcome}}</h1>
+@foreach($tasks as $task)
+{{$task->body}}
+@endforeach
